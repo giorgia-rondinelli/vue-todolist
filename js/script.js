@@ -23,11 +23,16 @@ createApp({
           text:'chiamare ludovico ',
           done:false
         }
-      ]
+      ],
+
+      newTask:''
 
     }
   },
   methods:{
+    addTask(){
+      this.todoList.unshift({ text: this.newTask, done: false })
+    }
 
   }
 }).mount('#app')
