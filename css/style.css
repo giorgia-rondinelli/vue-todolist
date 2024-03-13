@@ -76,3 +76,7 @@ img{
 .task-container li.done{
   text-decoration: line-through;
 }
+
+.sbarrato{
+  text-decoration: line-through
+}

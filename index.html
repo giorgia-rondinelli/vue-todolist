@@ -30,30 +30,18 @@
 
     <div class="new-task">
 
-      <input  placeholder="Nuovo task"type="text">
+      <input  placeholder="Nuovo task"type="text" >
       <button >Aggiungi</button>
       <p class="error"></p>
     </div>
 
     <div class="task-container">
       <ul>
-        <li>
-          <span>task....</span>
+        <li v-for="(task, indice) in todoList">
+          <span class="" :class="{'sbarrato': task.done=== true  }">{{task.text}}</span>
           <i class="fa-solid fa-trash-can"></i>
         </li>
-        <li>
-          <span>task....</span>
-          <i class="fa-solid fa-trash-can"></i>
-        </li>
-        <li>
-          <span>task....</span>
-          <i class="fa-solid fa-trash-can"></i>
-        </li>
-        <li>
-          <span>task....</span>
-          <i class="fa-solid fa-trash-can"></i>
-        </li>
-
+   
       </ul>
 
     </div>
