@@ -46,7 +46,8 @@ createApp({
     removeTask(indice){
       this.todoList.splice( indice,1)
 
-    }
+    },
+   
 
   }
 }).mount('#app')
