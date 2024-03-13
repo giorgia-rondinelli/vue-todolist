@@ -15,3 +15,4 @@ Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
 - aggiungo alla funzione addTask un if in cui come condizione imposto una lughezza minima della stringa inserita 
 - altrimenti il data error assumerà un messaggio di conseguenza 
 - aggiungo un toggle che inverte il valore di done al clic sull'li
+- inserisco un v-if e un v-else ceh controllano se è presente almeno un oggetto nell'array altrimenti stampano un messaggio

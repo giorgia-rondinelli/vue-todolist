@@ -26,7 +26,8 @@ createApp({
       ],
 
       newTask:'',
-      error:''
+      error:'',
+      messaggio:'errore'
 
     }
   },
@@ -36,6 +37,7 @@ createApp({
         this.todoList.unshift({ text: this.newTask, done: false })
         this.newTask=''
         this.error=''
+
       }
       else{
         this.error='inserisci un testo di almeno 4 caratteri'
@@ -44,9 +46,19 @@ createApp({
       
     },
     removeTask(indice){
-      this.todoList.splice( indice,1)
+      //  if(this.todoList.done===true){
 
-    },
+      
+      this.todoList.splice( indice,1)
+      // this.error=''
+    
+      //  }
+      // else{
+      //   this.error='devi prima eseguire la task'
+      // }
+
+    
+    }
    
 
   }
