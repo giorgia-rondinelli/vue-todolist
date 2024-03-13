@@ -11,4 +11,6 @@ Questa volta però ogni todo sarà un oggetto, formato da due proprietà:
 - al clic sul bottone aggiungi aggiungo un nuovo oggetto che inseriro nell'array todoList e ne stampo in pagina il text stampo in pagina 
 - creo una funzione che rimuove dall'array l'oggetto con indice corrispondente 
 - passo la funzione al click del bottone 'cestino'
-
+- aggiungo un data error con stringa vuota 
+aggiungo alla funzione addTask un if in cui come condizione imposto una lughezza minima della stringa inserita 
+altrimenti il data error assumerà un messaggio di conseguenza 

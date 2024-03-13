@@ -25,13 +25,23 @@ createApp({
         }
       ],
 
-      newTask:''
+      newTask:'',
+      error:''
 
     }
   },
   methods:{
     addTask(){
-      this.todoList.unshift({ text: this.newTask, done: false })
+      if (this.newTask.length >3 ){
+        this.todoList.unshift({ text: this.newTask, done: false })
+        this.newTask=''
+        this.error=''
+      }
+      else{
+        this.error='inserisci un testo di almeno 4 caratteri'
+        this.newTask=''
+      }
+      
     },
     removeTask(indice){
       this.todoList.splice( indice,1)

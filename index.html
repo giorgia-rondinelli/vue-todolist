@@ -32,7 +32,7 @@
 
       <input @keyup.enter="addTask" placeholder="Nuovo task"type="text" v-model="newTask">
       <button @click="addTask" >Aggiungi</button>
-      <p class="error"></p>
+      <p class="error">{{error}}</p>
     </div>
 
     <div class="task-container">
