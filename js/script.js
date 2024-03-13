@@ -32,6 +32,10 @@ createApp({
   methods:{
     addTask(){
       this.todoList.unshift({ text: this.newTask, done: false })
+    },
+    removeTask(indice){
+      this.todoList.splice( indice,1)
+
     }
 
   }
