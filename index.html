@@ -37,9 +37,15 @@
 
     <div class="task-container">
       <ul v-if="todoList.length>0">
-        <li v-for="(task, indice) in todoList" @click.stop="task.done= !task.done ">
-          <span  class="" :class="{'sbarrato': task.done=== true  }">{{task.text}}</span>
-          <i @click.stop="removeTask(indice)" class="fa-solid fa-trash-can"></i>
+        <li
+          v-for="(task, indice) in todoList"
+          @click.stop="task.done= !task.done ">
+         <span
+            class=""
+            :class="{'sbarrato': task.done  }">{{task.text}}</span>
+         <i
+            @click.stop="removeTask(indice)"
+            class="fa-solid fa-trash-can"></i>
           
           
           <!-- <i v-if= " task.done===true"@click.stop="removeTask(indice)" class="fa-solid fa-trash-can"></i>

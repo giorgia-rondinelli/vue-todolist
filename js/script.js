@@ -46,16 +46,16 @@ createApp({
       
     },
     removeTask(indice){
-      //  if(this.todoList.done===true){
+        if(this.todoList[indice].done){
 
       
       this.todoList.splice( indice,1)
-      // this.error=''
+       this.error=''
     
-      //  }
-      // else{
-      //   this.error='devi prima eseguire la task'
-      // }
+       }
+      else{
+        this.error='devi prima eseguire la task'
+      }
 
     
     }
